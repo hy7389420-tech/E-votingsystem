@@ -71,28 +71,28 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0e27] flex flex-col justify-center items-center p-4 relative overflow-hidden my-6">
+    <div className="min-h-screen bg-[#14163A] flex flex-col justify-center items-center p-4 relative overflow-hidden my-6">
       {/* Background Glows */}
-      <div className="absolute top-10 right-1/3 w-[500px] h-[500px] bg-[#4ec9b0]/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-10 right-1/3 w-[500px] h-[500px] bg-[#7C83FD]/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="w-full max-w-2xl space-y-6 relative z-10">
         {/* Header */}
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#4ec9b0] via-[#00d9ff] to-[#7f8cff] p-[1.5px] shadow-[0_0_30px_rgba(78,201,176,0.3)] mb-2">
-            <div className="w-full h-full bg-[#0a0e27] rounded-[14px] flex items-center justify-center">
-              <ShieldCheck className="w-8 h-8 text-[#4ec9b0]" />
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#7C83FD] via-[#7C83FD] to-[#4B4FD8] p-[1.5px] shadow-[0_0_30px_rgba(124, 131, 253,0.3)] mb-2">
+            <div className="w-full h-full bg-[#14163A] rounded-[14px] flex items-center justify-center">
+              <ShieldCheck className="w-8 h-8 text-[#7C83FD]" />
             </div>
           </div>
-          <h1 className="text-2xl md:text-3xl font-black text-[#e0e0ff] tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-black text-[#EEF0FF] tracking-tight">
             Voter Registration
           </h1>
-          <p className="text-xs text-[#8b8fb0]">
+          <p className="text-xs text-[#A5AAD6]">
             Step 1 of 5 • Create your secure digital voter identity
           </p>
         </div>
 
         {/* Signup Card */}
-        <div className="glass-card rounded-3xl p-6 md:p-8 border border-[#4ec9b0]/30 shadow-2xl space-y-6">
+        <div className="glass-card rounded-3xl p-6 md:p-8 border border-[#7C83FD]/30 shadow-2xl space-y-6">
           {error && <Alert type="error" message={error} onClose={() => setError("")} />}
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -191,11 +191,11 @@ export default function SignupPage() {
                 id="agreeTerms"
                 checked={agreeTerms}
                 onChange={(e) => setAgreeTerms(e.target.checked)}
-                className="mt-1 rounded bg-[#0a0e27] border-[#4ec9b0]/30 text-[#4ec9b0] focus:ring-[#4ec9b0]"
+                className="mt-1 rounded bg-[#14163A] border-[#7C83FD]/30 text-[#7C83FD] focus:ring-[#7C83FD]"
               />
-              <label htmlFor="agreeTerms" className="text-xs text-[#8b8fb0] leading-relaxed">
+              <label htmlFor="agreeTerms" className="text-xs text-[#A5AAD6] leading-relaxed">
                 I certify that I am an Indian citizen aged 18+ and agree to the{" "}
-                <a href="#" className="text-[#4ec9b0] underline">
+                <a href="#" className="text-[#7C83FD] underline">
                   Terms of Voting Service
                 </a>{" "}
                 and Privacy Policy.
@@ -215,9 +215,9 @@ export default function SignupPage() {
           </form>
 
           {/* Footer Link */}
-          <div className="text-center pt-2 text-xs text-[#8b8fb0]">
+          <div className="text-center pt-2 text-xs text-[#A5AAD6]">
             Already have an account?{" "}
-            <Link href="/login" className="text-[#4ec9b0] font-bold hover:underline">
+            <Link href="/login" className="text-[#7C83FD] font-bold hover:underline">
               Sign In Here
             </Link>
           </div>

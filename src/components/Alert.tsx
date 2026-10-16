@@ -21,31 +21,31 @@ export default function Alert({
   const configs = {
     success: {
       icon: CheckCircle2,
-      border: "border-[#10b981]/40",
-      bg: "bg-[#10b981]/10",
-      text: "text-[#10b981]",
-      titleColor: "text-[#e0e0ff]"
+      border: "border-[#10B981]/40",
+      bg: "bg-[#10B981]/10",
+      text: "text-[#10B981]",
+      titleColor: "text-[#EEF0FF]"
     },
     warning: {
       icon: AlertTriangle,
-      border: "border-[#f59e0b]/40",
-      bg: "bg-[#f59e0b]/10",
-      text: "text-[#f59e0b]",
-      titleColor: "text-[#e0e0ff]"
+      border: "border-[#F59E0B]/40",
+      bg: "bg-[#F59E0B]/10",
+      text: "text-[#F59E0B]",
+      titleColor: "text-[#EEF0FF]"
     },
     error: {
       icon: XCircle,
-      border: "border-[#ef4444]/40",
-      bg: "bg-[#ef4444]/10",
-      text: "text-[#ef4444]",
-      titleColor: "text-[#e0e0ff]"
+      border: "border-[#EF4444]/40",
+      bg: "bg-[#EF4444]/10",
+      text: "text-[#EF4444]",
+      titleColor: "text-[#EEF0FF]"
     },
     info: {
       icon: Info,
-      border: "border-[#00d9ff]/40",
-      bg: "bg-[#00d9ff]/10",
-      text: "text-[#00d9ff]",
-      titleColor: "text-[#e0e0ff]"
+      border: "border-[#7C83FD]/40",
+      bg: "bg-[#4B4FD8]/15",
+      text: "text-[#7C83FD]",
+      titleColor: "text-[#EEF0FF]"
     }
   };
 
@@ -60,13 +60,13 @@ export default function Alert({
       
       <div className="flex-1 text-xs">
         {title && <h5 className={`font-bold ${config.titleColor} text-sm mb-0.5`}>{title}</h5>}
-        <p className="text-[#e0e0ff] leading-relaxed">{message}</p>
+        <p className="text-[#EEF0FF] leading-relaxed">{message}</p>
       </div>
 
       {onClose && (
         <button
           onClick={onClose}
-          className="text-[#8b8fb0] hover:text-[#e0e0ff] p-1 rounded-lg hover:bg-white/5 transition-colors"
+          className="text-[#A5AAD6] hover:text-[#EEF0FF] p-1 rounded-lg hover:bg-white/5 transition-colors"
           aria-label="Dismiss alert"
         >
           <X size={16} />

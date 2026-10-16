@@ -16,8 +16,8 @@
 
 ## 🎨 Design & Architectural Specifications
 
-- **Theme:** Exclusive Dark Glassmorphism (`#0a0e27` background, `#141829` card background, backdrop blur)
-- **Palette:** Primary Teal (`#4ec9b0`), Secondary Blue (`#7f8cff`), Accent Cyan (`#00d9ff`), Purple (`#d946ef`), Success (`#10b981`), Warning (`#f59e0b`), Error (`#ef4444`)
+- **Theme:** Exclusive Dark Glassmorphism (`#14163A` background, `rgba(26, 29, 74, 0.65)` card background, backdrop blur)
+- **Palette:** Primary (`#4B4FD8`), Accent (`#7C83FD`), Background (`#14163A`), Text (`#EEF0FF`), Muted (`#A5AAD6`), Border (`rgba(124, 131, 253, 0.25)`), Success (`#10B981`), Warning (`#F59E0B`), Error (`#EF4444`)
 - **State & Storage:** `localStorage` persistence with custom hooks (`useAuth`, `useVoting`, `useBiometric`)
 
 ---
@@ -52,7 +52,7 @@ gantt
 ## 📅 Phase-by-Phase Detailed Plan
 
 ### 🚀 Phase 1: Foundation & Global Layout (Days 1–2)
-- [ ] Configure global glassmorphic design system tokens in Tailwind CSS (`globals.css`, colors `#0a0e27`, `#141829`, `#4ec9b0`)
+- [ ] Configure global glassmorphic design system tokens in Tailwind CSS (`globals.css`, colors `#14163A`, `#4B4FD8`, `#7C83FD`)
 - [ ] Build sticky Header component with brand logo, notifications bell, user avatar, and status badge (`src/components/Header.tsx`)
 - [ ] Build collapsible Sidebar component with 18 route navigation links (`src/components/Sidebar.tsx`)
 - [ ] Implement Root Layout wrapper dynamically rendering Header & Sidebar for app pages (`src/app/layout.tsx`)
@@ -103,7 +103,7 @@ gantt
 
 ### 🧪 Phase 11: Testing, Responsiveness & Polish (Days 18–19)
 - [ ] Mobile responsiveness audit across iOS & Android screen widths (sidebar drawer, card grids)
-- [ ] Accessibility review (ARIA tags, high contrast text `#e0e0ff`, keyboard nav)
+- [ ] Accessibility review (ARIA tags, high contrast text `#EEF0FF`, keyboard nav)
 - [ ] Data state verification (`localStorage` initial seed and reset testing)
 
 ### 🚀 Phase 12: Deployment & SIH Submission Package (Day 20)

@@ -18,8 +18,8 @@
 ---
 
 ## 🛠️ Step-by-Step Task Checklist
-- [ ] 1. Build `src/hooks/useBiometric.ts`.
-- [ ] 2. Build `src/app/aadhar-verify/page.tsx`.
-- [ ] 3. Build `src/app/biometric/page.tsx`.
-- [ ] 4. Build `src/app/notifications/page.tsx`.
-- [ ] 5. Run `npm run build` to verify zero TypeScript errors.
+- [x] 1. Build `src/hooks/useBiometric.ts`.
+- [x] 2. Build `src/app/aadhar-verify/page.tsx`.
+- [x] 3. Build `src/app/biometric/page.tsx`.
+- [x] 4. Build `src/app/notifications/page.tsx`.
+- [x] 5. Run `npm run build` to verify zero TypeScript errors.

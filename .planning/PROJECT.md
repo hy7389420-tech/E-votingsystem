@@ -15,15 +15,13 @@ A complete, 18-page modern web voting platform featuring multi-layered voter aut
 
 ## 🎨 2. Design System Tokens
 - **Theme:** Dark Glassmorphism ONLY (No light mode toggle)
-- **Primary Color:** `#4ec9b0` (Teal / Turquoise)
-- **Secondary Color:** `#7f8cff` (Blue)
-- **Accent Color:** `#00d9ff` (Cyan)
-- **Purple Accent:** `#d946ef`
-- **Main Background:** `#0a0e27` (Very Dark Blue)
-- **Card Background:** `#141829` (Dark Blue-Gray)
-- **Card Border:** `rgba(78, 201, 176, 0.15)`
-- **Success:** `#10b981` | **Warning:** `#f59e0b` | **Error:** `#ef4444`
-- **Primary Text:** `#e0e0ff` | **Muted Text:** `#8b8fb0`
+- **Primary Color:** `#4B4FD8`
+- **Accent Color:** `#7C83FD`
+- **Main Background:** `#14163A`
+- **Card Background:** `rgba(26, 29, 74, 0.65)` (`#1A1D4A`)
+- **Card Border:** `rgba(124, 131, 253, 0.25)`
+- **Success:** `#10B981` | **Warning:** `#F59E0B` | **Error:** `#EF4444`
+- **Primary Text:** `#EEF0FF` | **Muted Text:** `#A5AAD6`
 
 ---
 

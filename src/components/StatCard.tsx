@@ -21,7 +21,7 @@ export default function StatCard({
   value,
   subtext,
   icon: Icon,
-  iconColor = "#4ec9b0",
+  iconColor = "#7C83FD",
   trend,
   className = ""
 }: StatCardProps) {
@@ -34,12 +34,12 @@ export default function StatCard({
       />
 
       <div className="flex items-center justify-between">
-        <span className="text-xs font-semibold text-[#8b8fb0] tracking-wide">{title}</span>
+        <span className="text-xs font-semibold text-[#A5AAD6] tracking-wide">{title}</span>
         <div
           className="w-10 h-10 rounded-xl flex items-center justify-center border transition-transform group-hover:scale-110"
           style={{
-            backgroundColor: `${iconColor}15`,
-            borderColor: `${iconColor}30`,
+            backgroundColor: `${iconColor}1A`,
+            borderColor: `${iconColor}40`,
             color: iconColor
           }}
         >
@@ -49,13 +49,13 @@ export default function StatCard({
 
       <div className="mt-4 space-y-1">
         <div className="flex items-baseline justify-between">
-          <span className="text-2xl md:text-3xl font-black text-[#e0e0ff] tracking-tight">{value}</span>
+          <span className="text-2xl md:text-3xl font-black text-[#EEF0FF] tracking-tight">{value}</span>
           {trend && (
             <span
               className={`flex items-center gap-1 text-xs font-bold px-2 py-0.5 rounded-full ${
                 trend.isPositive
-                  ? "bg-[#10b981]/15 text-[#10b981] border border-[#10b981]/30"
-                  : "bg-[#ef4444]/15 text-[#ef4444] border border-[#ef4444]/30"
+                  ? "bg-[#10B981]/15 text-[#10B981] border border-[#10B981]/30"
+                  : "bg-[#EF4444]/15 text-[#EF4444] border border-[#EF4444]/30"
               }`}
             >
               {trend.isPositive ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
@@ -63,7 +63,7 @@ export default function StatCard({
             </span>
           )}
         </div>
-        {subtext && <p className="text-[11px] text-[#8b8fb0]">{subtext}</p>}
+        {subtext && <p className="text-[11px] text-[#A5AAD6]">{subtext}</p>}
       </div>
     </div>
   );

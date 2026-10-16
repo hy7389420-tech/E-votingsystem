@@ -12,7 +12,7 @@
 ---
 
 ## 🎯 Phase Objectives
-1. **Design System Baseline**: Establish the exact dark glassmorphism theme (`#0a0e27` background, `#141829` card background, `#4ec9b0` primary teal) in CSS custom properties and utility classes.
+1. **Design System Baseline**: Establish the exact dark glassmorphism theme (`#14163A` background, `rgba(26, 29, 74, 0.65)` card background, `#4B4FD8` primary, `#7C83FD` accent) in CSS custom properties and utility classes.
 2. **Top Navigation Header**: Create a responsive top navigation bar featuring the SIH 2026 E-Voting brand logo, voter verification badge, notification bell, and user avatar dropdown.
 3. **Left Navigation Sidebar**: Build a 280px left sidebar listing all 18 application routes categorized cleanly into Navigation, User & Onboarding, Help, and Admin sections.
 4. **App Shell Layout**: Configure `layout.tsx` to handle responsive drawer toggling and automatically apply the full-screen layout for authentication pages (`/login`, `/signup`) versus the shell layout for app pages.
@@ -22,14 +22,14 @@
 ## 🛠️ Step-by-Step Task Checklist
 
 ### Step 1: Design System & CSS Utility Setup
-- [x] Define CSS color variables in `src/app/globals.css` (`--bg-main`, `--bg-card`, `--color-teal`, `--color-blue`, `--color-cyan`, `--color-purple`, `--text-primary`, `--text-muted`).
-- [x] Implement `.glass-card` utility with `backdrop-filter: blur(16px)`, gradient border `rgba(78, 201, 176, 0.18)`, and subtle shadow.
+- [x] Define CSS color variables in `src/app/globals.css` (`--color-bg`, `--color-primary`, `--color-accent`, `--color-text`, `--color-muted`, `--color-border`).
+- [x] Implement `.glass-card` utility with `backdrop-filter: blur(16px)`, gradient border `rgba(124, 131, 253, 0.25)`, and subtle shadow.
 - [x] Add custom scrollbar styling and font settings (Inter / system-ui).
 
 ### Step 2: Build Header Component (`src/components/Header.tsx`)
 - [x] Create sticky top header container (`h-[70px]`, dark glassmorphic background).
-- [x] Add brand emblem: `⚡ Smart Secure E-Voting` with teal gradient title.
-- [x] Include status indicator pill: `✅ Aadhar Verified` (`#10b981` background glow).
+- [x] Add brand emblem: `⚡ Smart Secure E-Voting` with accent gradient title.
+- [x] Include status indicator pill: `✅ Aadhar Verified` (`#10B981` background glow).
 - [x] Add notification bell with unread badge counter.
 - [x] Add user avatar button with user name (`Harsh Yadav`) and role badge (`Voter / B.Tech ECE`).
 - [x] Add mobile hamburger toggle button triggering sidebar drawer.
@@ -41,7 +41,7 @@
   2. **Onboarding & Verification**: Aadhar Verify (`/aadhar-verify`), Biometric Setup (`/biometric`), Preferences (`/notifications`)
   3. **User Account**: Profile (`/profile`), Security (`/security`), Voting History (`/voting-history`)
   4. **Support & Admin**: FAQ (`/faq`), Voter Guide (`/guide`), Support (`/support`), Admin (`/admin`)
-- [x] Implement active route detection (`usePathname`) with glowing left indicator bar and active teal text.
+- [x] Implement active route detection (`usePathname`) with glowing left indicator bar and active accent text.
 - [x] Implement responsive mobile overlay for sidebar slide-out.
 
 ### Step 4: Root Layout Integration (`src/app/layout.tsx`)

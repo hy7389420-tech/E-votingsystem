@@ -28,9 +28,9 @@ export default function Button({
   const variants = {
     primary: "glass-button-primary",
     secondary: "glass-button-secondary",
-    ghost: "bg-transparent hover:bg-[#141829] text-[#e0e0ff] hover:text-[#4ec9b0] border border-transparent hover:border-[#4ec9b0]/20",
-    danger: "bg-gradient-to-r from-[#ef4444] to-[#dc2626] text-white shadow-[0_4px_15px_rgba(239,68,68,0.3)] hover:shadow-[0_6px_20px_rgba(239,68,68,0.5)] hover:-translate-y-0.5",
-    outline: "bg-transparent border border-[#4ec9b0]/40 text-[#4ec9b0] hover:bg-[#4ec9b0]/10 hover:border-[#4ec9b0]"
+    ghost: "bg-transparent hover:bg-[rgba(124,131,253,0.12)] text-[#EEF0FF] hover:text-[#7C83FD] border border-transparent hover:border-[rgba(124,131,253,0.25)]",
+    danger: "bg-gradient-to-r from-[#EF4444] to-[#DC2626] text-white shadow-[0_4px_15px_rgba(239,68,68,0.3)] hover:shadow-[0_6px_20px_rgba(239,68,68,0.5)] hover:-translate-y-0.5",
+    outline: "bg-transparent border border-[rgba(124,131,253,0.4)] text-[#7C83FD] hover:bg-[rgba(124,131,253,0.15)] hover:border-[#7C83FD]"
   };
 
   const sizes = {

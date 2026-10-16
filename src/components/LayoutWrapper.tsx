@@ -13,11 +13,11 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   const isAuthPage = pathname === "/login" || pathname === "/signup";
 
   if (isAuthPage) {
-    return <main className="min-h-screen bg-[#0a0e27] text-[#e0e0ff]">{children}</main>;
+    return <main className="min-h-screen bg-[#14163A] text-[#EEF0FF]">{children}</main>;
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0e27] text-[#e0e0ff] flex flex-col">
+    <div className="min-h-screen bg-[#14163A] text-[#EEF0FF] flex flex-col">
       <Header
         onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
         isSidebarOpen={isSidebarOpen}

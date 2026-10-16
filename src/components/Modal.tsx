@@ -47,23 +47,23 @@ export default function Modal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-[#0a0e27]/80 backdrop-blur-md transition-opacity animate-in fade-in"
+        className="fixed inset-0 bg-[#14163A]/85 backdrop-blur-md transition-opacity animate-in fade-in"
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Modal Dialog */}
       <div
-        className={`relative w-full ${maxWidths[maxWidth]} glass-card rounded-3xl border border-[#4ec9b0]/30 shadow-2xl overflow-hidden z-10 animate-in fade-in zoom-in-95 duration-200`}
+        className={`relative w-full ${maxWidths[maxWidth]} glass-card rounded-3xl border border-[rgba(124,131,253,0.35)] shadow-2xl overflow-hidden z-10 animate-in fade-in zoom-in-95 duration-200`}
         role="dialog"
         aria-modal="true"
       >
         {/* Header */}
-        <div className="px-6 py-4 border-b border-[#4ec9b0]/15 flex items-center justify-between">
-          <h3 className="text-base font-bold text-[#e0e0ff]">{title}</h3>
+        <div className="px-6 py-4 border-b border-[rgba(124,131,253,0.25)] flex items-center justify-between">
+          <h3 className="text-base font-bold text-[#EEF0FF]">{title}</h3>
           <button
             onClick={onClose}
-            className="p-1.5 text-[#8b8fb0] hover:text-[#e0e0ff] hover:bg-white/5 rounded-xl transition-colors"
+            className="p-1.5 text-[#A5AAD6] hover:text-[#EEF0FF] hover:bg-[#7C83FD]/15 rounded-xl transition-colors"
             aria-label="Close modal"
           >
             <X size={18} />
@@ -71,13 +71,13 @@ export default function Modal({
         </div>
 
         {/* Content Body */}
-        <div className="p-6 text-xs md:text-sm text-[#e0e0ff] space-y-4 max-h-[75vh] overflow-y-auto">
+        <div className="p-6 text-xs md:text-sm text-[#EEF0FF] space-y-4 max-h-[75vh] overflow-y-auto">
           {children}
         </div>
 
         {/* Footer */}
         {footer && (
-          <div className="px-6 py-4 border-t border-[#4ec9b0]/15 bg-[#0a0e27]/40 flex items-center justify-end gap-3">
+          <div className="px-6 py-4 border-t border-[rgba(124,131,253,0.25)] bg-[rgba(20,22,58,0.6)] flex items-center justify-end gap-3">
             {footer}
           </div>
         )}
